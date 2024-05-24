@@ -72,31 +72,31 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <select name="campus" id="campus" class="form-control mb-3">
-                            <option selected="selected" value="">Select Campus</option>
-                            <option value="#">FU-Hòa Lạc</option>
-                            <option value="#">FU-Hồ Chí Minh</option>
-                            <option value="#">FU-Đà Nẵng</option>
-                            <option value="#">FU-Cần Thơ</option>
-                            <option value="#">FU-Quy Nhơn</option>
-                        </select>
-                        <select name="loginMethod" id="loginMethod" class="form-control">
-                            <option selected="selected" value="">Select Login Method</option>
-                            <option value="#">Đăng nhập bằng mail FPT</option>
-                            <option value="#">Đăng nhập bằng FEID</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <form action="loginServlet" method="post">
+                <form action="loginServlet" method="post">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <select name="campus" id="campus" class="form-control mb-3">
+                                <option selected="selected" value="">Select Campus</option>
+                                <option value="#">FU-Hòa Lạc</option>
+                                <option value="#">FU-Hồ Chí Minh</option>
+                                <option value="#">FU-Đà Nẵng</option>
+                                <option value="#">FU-Cần Thơ</option>
+                                <option value="#">FU-Quy Nhơn</option>
+                            </select>
+                            <select name="loginMethod" id="loginMethod" class="form-control">
+                                <option selected="selected" value="">Select Login Method</option>
+                                <option value="#">Đăng nhập bằng mail FPT</option>
+                                <option value="#">Đăng nhập bằng FEID</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
                             <input type="email" name="email" placeholder="Email" class="form-control mb-3" required pattern=".+@.+\.fpt\.edu\.vn" title="Vui lòng nhập địa chỉ email hợp lệ với đuôi '.fpt.edu.vn'">
                             <input type="password" name="password" placeholder="Password" class="form-control mb-3" required>
                             <input type="submit" value="Login" class="btn btn-primary btn-block mb-3">
                             <button type="button" class="btn btn-link btn-block">Quên mật khẩu</button>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </main>
 

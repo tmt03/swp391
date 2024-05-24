@@ -16,6 +16,7 @@
 
 
         <style>
+            /* General styles */
             body {
                 font-family: Arial, sans-serif;
                 background-color: #f4f4f4;
@@ -23,25 +24,101 @@
                 padding: 0;
             }
 
-            header {
-
+            header, footer {
                 text-align: center;
-                margin-bottom: 20px;
-                margin-top: 20px;
+                margin: 20px 0;
             }
 
+            .header-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .left-content h1 {
+                margin: 0;
+            }
+
+            .right-content {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-right: 20px; /* Cách bên phải của header 1 */
+            }
+
+            .right-content table {
+                margin-right: 20px; /* Khoảng cách giữa bảng và avatar */
+            }
+
+            /* Định dạng cho các ô */
+            .right-content td {
+                padding: 8px; /* Khoảng cách giữa nội dung và biên của ô */
+                border-bottom: 1px solid #ddd; /* Đường kẻ phân chia giữa các hàng */
+            }
+
+            /* Định dạng cho hàng đầu tiên của bảng */
+            .right-content tr:first-child {
+                font-weight: bold; /* In đậm cho hàng đầu tiên */
+                background-color: #f2f2f2; /* Màu nền cho hàng đầu tiên */
+            }
+
+
+            /* Định dạng cho ảnh avatar */
+            .right-content #avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%; /* Bo tròn ảnh avatar */
+                cursor: pointer; /* Biến con trỏ thành dấu nhấn khi di chuột vào */
+            }
+
+            /* Định dạng cho mũi tên trên avatar */
+            .right-content #avatar:after {
+                content: '\25BE'; /* Thêm mũi tên xuống (Unicode) */
+                position: absolute;
+                top: 50%;
+                right: -10px; /* Đặt vị trí từ phải của avatar */
+                transform: translateY(-50%);
+                font-size: 14px; /* Đổi kích thước của mũi tên */
+            }
+
+            /* Ẩn các chức năng ban đầu */
+            .right-content #functions {
+                display: none;
+                position: absolute;
+                top: 60px; /* Điều chỉnh khoảng cách từ trên xuống */
+                right: 0;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 5px;
+            }
+
+            .right-content #functions a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+                padding: 5px;
+            }
+
+            /* Hiển thị các chức năng khi di chuột vào avatar */
+            .right-content:hover #functions {
+                display: block;
+            }
+            .icon-container:hover .functions {
+                display: block;
+            }
+
+            /* Navbar styles */
             nav {
                 height: 50px;
                 background-color: gray;
                 padding: 10px 0;
             }
-            .custom-modal {
-                position: fixed;
-                bottom: 60px; /* Điều chỉnh khoảng cách từ dưới lên */
-                right: 10px; /* Điều chỉnh vị trí từ phải sang trái */
-                z-index: 1050;
+
+            .navbar-brand {
+                cursor: pointer;
             }
 
+            /* Main content styles */
             main {
                 display: flex;
                 justify-content: center;
@@ -57,16 +134,49 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
 
+            /* Footer styles */
             footer {
                 text-align: center;
                 margin-top: 20px;
             }
+
         </style>
     </head>
     <body>
         <header>
-            <h1>FPTU Complaint Management System</h1>
+            <div class="header-container">
+                <span class="left-content">
+                    <h1>FPTU Complaint Management System</h1>
+                </span>
+                <span class="right-content">
+                    <table>
+                        <tr>
+                            <td>Tên Tài Khoản</td>
+                        </tr>
+                        <tr>
+                            <td>Cơ sở:</td>
+                            <td>Số dư:</td>
+                        </tr>
+                    </table>
+                </span>
+                <span class="right-content">
+                    <div class="icon-container" id="avatar-container">
+                        <img src="path_to_avatar.jpg" alt="Avatar" id="avatar">
+                        <div class="functions" id="functions">
+                            <a href="#" id="view-profile">View profile</a>
+                            <a href="#" id="change-password">Change password</a>
+                            <hr/>
+                            <a href="#" id="logout">Logout</a>
+                        </div>
+                    </div>
+                </span>
+
+
+            </div>
         </header>
+
+
+
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
                 <div class="row w-100">
