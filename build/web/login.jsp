@@ -90,7 +90,7 @@
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" name="email" placeholder="Email" class="form-control mb-3" required pattern=".+@.+\.fpt\.edu\.vn" title="Vui lòng nhập địa chỉ email hợp lệ với đuôi '.fpt.edu.vn'">
+                            <input type="email" name="email" placeholder="Email" class="form-control mb-3" required pattern=".+@fpt\.edu\.vn" title="Vui lòng nhập địa chỉ email hợp lệ với đuôi 'fpt.edu.vn'">
                             <input type="password" name="password" placeholder="Password" class="form-control mb-3" required>
                             <input type="submit" value="Login" class="btn btn-primary btn-block mb-3">
                             <button type="button" class="btn btn-link btn-block">Quên mật khẩu</button>
