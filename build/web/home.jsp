@@ -34,7 +34,7 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">View profile</a></li>
-                        <li><a class="dropdown-item" href="#">Deposit money</a></li>
+                        <li><a class="dropdown-item" href="#">Update profile</a></li><hr/>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                       </ul>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="container-fluid">
                         <div class="navbar-nav">
                             <a class="btn btn-dark" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                            <a class="btn btn-danger" href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+                            <a class="btn btn-primary" href="#"><i class="fa fa-bell"></i> Notifications <span class="badge bg-danger">4</span></a>
                         </div>
                     </div>
                 </nav>
