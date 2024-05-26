@@ -10,103 +10,57 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/home_style.css">
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-
-                text-align: center;
-                margin-bottom: 20px;
-                margin-top: 20px;
-            }
-
             nav {
                 height: 50px;
                 background-color: gray;
-                padding: 10px 0;
             }
 
-            main {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 80vh;
-            }
-
-            .main {
-                background-color: #fff;
-                padding: 20px;
-                border: 2px solid #333;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-            footer {
-                text-align: center;
-                margin-top: 20px;
-            }
         </style>
     </head>
     <body>
-        <header>
-            <h1>FPTU Complaint Management System</h1>
-        </header>
-        <nav>
-            <div class="container text-center">
-
-            </div>
-        </nav>
-
-        <main>
-            <div class="container main">
-                <div class="row mb-3">
-                    <div class="col text-center">
-                        <strong>Sinh Viên, Cán bộ ĐH-FPT</strong>
-                    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e8e56362e7.js" crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <header class="uniformed-padding">
+                        <h2>FPTU Complaint Management System</h2>
+                    </header>
                 </div>
-                <hr>
-                <form action="loginServlet" method="post">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <select name="campus" id="campus" class="form-control mb-3">
-                                <option selected="selected" value="">Select Campus</option>
-                                <option value="#">FU-Hòa Lạc</option>
-                                <option value="#">FU-Hồ Chí Minh</option>
-                                <option value="#">FU-Đà Nẵng</option>
-                                <option value="#">FU-Cần Thơ</option>
-                                <option value="#">FU-Quy Nhơn</option>
-                            </select>
-                            <select name="loginMethod" id="loginMethod" class="form-control">
-                                <option selected="selected" value="">Select Login Method</option>
-                                <option value="#">Đăng nhập bằng mail FPT</option>
-                                <option value="#">Đăng nhập bằng FEID</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" name="email" placeholder="Email" class="form-control mb-3" required pattern=".+@fpt\.edu\.vn" title="Vui lòng nhập địa chỉ email hợp lệ với đuôi 'fpt.edu.vn'">
-                            <input type="password" name="password" placeholder="Password" class="form-control mb-3" required>
-                            <input type="submit" value="Login" class="btn btn-primary btn-block mb-3">
-                            <button type="button" class="btn btn-link btn-block">Quên mật khẩu</button>
+                <nav class="navbar-brand">
+                </nav>
+                <form action="#" method="POST">
+                    <div class="container p-0 my-5 d-flex justify-content-center">
+                        <div class="border border-4 rounded-4">
+                            <div class="p-4">
+                                <h4 class="text-center">Đăng nhập</h4>
+                                <span class="lead">Chào mừng bạn đến với hệ thống quản lý đơn thư</span>
+                                <div class="mt-3 d-flex justify-content-center">
+                                    <select class="form-select" aria-label="Select campus">
+                                        <option selected>Select campus</option>
+                                        <option value="1">FU-Hòa Lạc</option>
+                                        <option value="2">FU-Hồ Chí Minh</option>
+                                        <option value="3">FU-Đà Nẵng</option>
+                                        <option value="4">FU-Cần Thơ</option>
+                                        <option value="5">FU-Quy Nhơn</option>
+                                    </select>
+                                </div>
+                                <hr class="mt-3">
+                                <div class=" buttom d-grid gap-3">
+                                    <button type="button" class="btn btn-danger">Login with FPT email</button>
+                                    <p class="mb-0">Với sinh viên từ K19 đăng nhập với FEID</p>
+                                    <button type="button" class="btn btn-primary">Login with FEID</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
+
+
             </div>
-        </main>
-
-        <footer>
-            &copy; 2024 FPTU Complaint Management System
-        </footer>
-
-        <!-- Add Bootstrap JS and dependencies -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
     </body>
 </html>
