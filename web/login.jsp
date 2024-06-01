@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/home_style.css">
+        <link rel="stylesheet" href="public/css/home_style.css">
         <style>
             nav {
                 height: 50px;
@@ -30,7 +30,7 @@
                         <h2>FPTU Complaint Management System</h2>
                     </header>
                 </div>
-                <nav class="navbar-brand">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 </nav>
                 <form action="#" method="POST">
                     <div class="container p-0 my-5 d-flex justify-content-center">
@@ -50,9 +50,9 @@
                                 </div>
                                 <hr class="mt-3">
                                 <div class=" buttom d-grid gap-3">
-                                    <button type="button" class="btn btn-danger">Login with FPT email</button>
+                                    <a type="button" class="btn btn-danger" href="#">Login with FPT email</a>
                                     <p class="mb-0">Với sinh viên từ K19 đăng nhập với FEID</p>
-                                    <button type="button" class="btn btn-primary">Login with FEID</button>
+                                    <a type="button" class="btn btn-primary" href="#">Login with FEID</a>
                                 </div>
                             </div>
                         </div>

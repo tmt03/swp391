@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="public/home_style.css">
+        <link rel="stylesheet" href="public/css/home_style.css">
     </head>
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -40,10 +40,9 @@
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <div class="navbar-nav">
                             <a class="btn btn-dark" href="#"><i class="fa-solid fa-house"></i> Home</a>
                             <a class="btn btn-primary" href="#"><i class="fa fa-bell"></i> Notifications <span class="badge bg-danger">4</span></a>
-                        </div>
+                        
                     </div>
                 </nav>
             </div> 
